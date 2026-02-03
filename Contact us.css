@@ -69,7 +69,7 @@ span {
     width: 450px;
     position: relative;
     top: 40px;
-    right: 320px;
+    right: 200px;
     margin-bottom: 18px;
     border-radius: 6px;
     padding-left: 10px;
@@ -83,7 +83,7 @@ textarea,
 button {
     position: relative;
     top: 40px;
-    right: 320px;
+    right: 200px;
     display: block;
     height: 40px;
     width: 450px;
