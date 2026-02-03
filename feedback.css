@@ -12,7 +12,6 @@ body {
     min-height: 100vh;
 }
 
-
 .main-content {
     flex: 1;
     display: flex;
@@ -57,6 +56,7 @@ textarea {
     border-radius: 5px;
     background: #222;
     color: white;
+    font-family: inherit; 
 }
 
 button {
@@ -77,7 +77,10 @@ button:hover {
     transform: scale(1.02);
 }
 
-/* Footer Responsive Settings */
+footer {
+    margin-top: 50px; 
+}
+
 .foot-panel1 {
     background-color: #121212;
     height: 50px;
@@ -89,23 +92,24 @@ button:hover {
 .foot-panel1 a {
     text-decoration: none;
     color: rgb(255, 251, 0);
-    font-size: 1.2rem;
+    font-size: 1.1rem; 
 }
 
 .foot-panel2 {
     background-color: #121212;
-    padding: 40px 20px;
+    min-height: 330px; 
     color: rgb(255, 251, 0);
+    font-size: 18px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-evenly;
     border-top: 1px solid black;
+    padding-bottom: 20px; 
 }
 
 ul {
-    margin-top: 20px;
-    list-style: none;
-    min-width: 200px;
+    margin-top: 70px;
+    list-style: none; 
 }
 
 ul a {
@@ -118,15 +122,16 @@ ul a {
 
 .foot-panel3 {
     background-color: #121212;
-    padding: 20px 0;
-    border-top: 2px solid;
+    height: 120px;
+    border-top: 2px solid #333; 
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 .foot-logo {
     background-image: url("https://assets.indolj.io/upload/1751470831-1658409985-Logo-california-(1).png?q=10");
-    background-size: contain;
+    background-size: contain; 
     background-repeat: no-repeat;
     background-position: center;
     height: 90px;
@@ -135,27 +140,29 @@ ul a {
 
 .foot-panel4 {
     border-top: 1px solid black;
-    padding: 20px;
+    min-height: 60px;
     background-color: #121212;
     color: red;
+    font-size: 1rem;
     text-align: center;
+    padding: 10px;
 }
 
-.foot-pages a {
-    margin: 0 10px;
-    font-size: 0.8rem;
-    display: inline-block;
-}
 
-/* Media Query for Mobile */
 @media (max-width: 600px) {
     .feedback-container {
         padding: 20px;
+        margin: 0 10px; 
     }
 
     .foot-panel2 {
         flex-direction: column;
         align-items: center;
         text-align: center;
+        padding-top: 20px;
+    }
+
+    ul {
+        margin-top: 20px; 
     }
 }
